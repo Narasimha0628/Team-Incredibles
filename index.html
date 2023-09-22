@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.1/css/all.min.css">
+    <link rel="stylesheet" href="./style.css">
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@500&display=swap" rel="stylesheet">
+    <title>Responsive Landing Page with Nav Menu</title>
+</head>
+
+<body>
+    <header>
+        <h1>Pet Sitting</h1>
+
+        <section class="menu">
+            <ul class="menu-list">
+                <li>Home</li>
+                <li>Services</li>
+                <li>About Us</li>
+                <li><a href="mailto:teamincredibles@gmail.com" >Contact</a></li>
+                <li>Login</li>
+            </ul>
+
+            <button>
+                <i class="fas fa-times"></i>
+                <i class="fas fa-bars"></i>
+            </button>
+        </section>
+    </header> 
+
+
+    <section class="main">
+
+        <section class="left">
+            <p class="title">Information Technology</p>
+            <p class="msg">Pet sitting is the act of temporarily taking care of another person's pet for a given time frame. 
+                It commonly occurs at the pet owner's home, but may also occur at the provider's home or at a pet sitting place of business or organization. 
+                Pet sitting is a more personal and individualized arrangement for care compared to boarding or kenneling. Specialized training is usually not required for pet sitting.</p>
+            <button class="cta">Learn More</button>
+        </section>
+
+        <section class="right">
+            <img src="images/pet.jfif" alt="Langing image">
+        </section>
+
+    </section>
+    <footer>
+        <div class="footerBottom"><p> &copy;2023 ; Deigned by <span class="designer">TEAM INCREDIBLES</span></p> </div>
+    </footer>
+
+    <script src="script.js">
+        var menu = document.querySelector('.menu');
+        var menuBtn = document.querySelector('.menu button');
+        menuBtn.addEventListener('click', () => {
+            menu.classList.toggle('opened')
+        })
+
+         
+
+    </script>
+
+
+</body>
+
+</html>
